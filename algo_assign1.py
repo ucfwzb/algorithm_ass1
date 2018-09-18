@@ -233,6 +233,8 @@ def mutlipy_function(ori_a,ori_b,divi=True):
                 if c[i+j+k]>9:
                     c[i+j+k+1]+=1
                     c[i+j+k]-=10
+                    if c[i+j+k+1]<=9:
+                        break
                 else: 
                     k+=1
                     if i+j+k==len(ori_a)+len(ori_b)-2:
